@@ -1,0 +1,7 @@
+<p>listing-product works!</p>
+
+<div class="ma-grille-de-produits">
+  @for (monProduit of products; track monProduit.id) {
+    <app-product [product]="monProduit"></app-product>
+  }
+</div>
