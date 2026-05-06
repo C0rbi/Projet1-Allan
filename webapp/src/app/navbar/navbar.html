@@ -1,0 +1,27 @@
+<nav class="navbar">
+    <div class="logo">
+        <a [routerLink]="['/']">
+            <img src="navbar/logo.png" alt="Logo de LDNC">
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li class="link">
+            <a [routerLink]="['/site']">
+                <img src="navbar/site-icon.svg" alt="">
+                <span>Site</span>
+            </a>
+        </li>
+        <li class="link">
+            <a [routerLink]="['/compte']">
+                <img src="navbar/compte-icon.svg" alt="Compte">
+                <span>Compte</span>
+            </a>
+        </li>
+        <li class="link">
+            <a [routerLink]="['/panier']">
+                <img src="navbar/panier-icon.svg" alt="Panier">
+                <span>Panier</span>
+            </a>
+        </li>
+    </ul>
+</nav>

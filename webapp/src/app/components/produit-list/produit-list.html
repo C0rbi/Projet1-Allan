@@ -1,0 +1,10 @@
+<h2>Nos Composants Informatiques</h2>
+
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+  <div *ngFor="let p of listeProduits" 
+       style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; width: 200px;">
+    <h3>{{ p.nom }}</h3>
+    <p>{{ p.prix }} cfp</p>
+    <button>Acheter</button>
+  </div>
+</div>

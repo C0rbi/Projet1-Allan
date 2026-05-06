@@ -6,8 +6,8 @@ import lombok.Setter;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
-@Entity 
-@Table(name = "produits")
+@Entity // tableau de la base de données
+@Table(name = "produits") // Optionnel, nom exact
 @Getter // getter et setter au-dessus de la classe pour générer les getters pour tous les champs
 @Setter
 @NoArgsConstructor // Génère un constructeur vide (obligatoire pour JPA)

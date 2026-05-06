@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { IndexHero } from "./index-hero/index-hero";
-import { ListingProduct } from "./listing-product/listing-product";
+import { RouterOutlet } from '@angular/router';
+import { Navbar } from './navbar/navbar';
 
 @Component({
   selector: 'app-root',
-  imports: [IndexHero, ListingProduct],
+  standalone: true, // pour Angular moderne
+  imports: [Navbar, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

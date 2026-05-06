@@ -1,0 +1,32 @@
+<div class="page-background">
+  <h1>IDENTIFIEZ-VOUS :</h1>
+
+  <div class="compte-container">
+    <!--Deja client-->
+    <div class="section-haute">
+      <h2>DEJA CLIENT ?</h2>
+      
+      <form class="compte-form">
+        <input type="email" placeholder="Votre email" required>
+        <input type="password" placeholder="Votre mot de passe" required>
+        
+        <a href="#" class="forgot-password">Vous avez oublié votre mot de passe ?</a>
+        
+        <button type="submit" class="btn-green">CONNEXION</button>
+        
+        <div class="checkbox-group">
+          <input type="checkbox" id="stay">
+          <label for="stay">Rester connecté</label>
+        </div>
+      </form>
+    </div>
+
+    <hr class="separator">
+
+    <!--Nouveau client-->
+    <div class="section-basse">
+      <p>NOUVEAU CLIENT ?</p>
+      <button [routerLink]="['/compte-creation']" class="btn-green">CREEZ UN COMPTE</button>
+    </div>
+  </div>
+</div>
